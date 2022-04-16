@@ -1,0 +1,104 @@
+/* Reset */
+
+body, p, h1, h2, h3, ul, ol {
+	margin:0;
+	padding:0;
+}
+
+img {max-width: 100%; display: block; }
+html {height: 100%}
+* {box-sizing: border-box;}
+
+
+/* Estilos Gerais */
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+	line-height: 1.7;
+	color:#FFF;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	line-height: 1;
+	color: #484747;
+}
+
+
+h2 {
+	font-size: 14px;
+	color: #484747;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+
+img {
+	height: 100%;
+	object-fit: cover; /* faz com que a imagem se ajuste ao tamanho dado */
+	object-position: center center;
+}
+
+/* Home */
+
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 600px 600px;
+	width: 1200px;
+	margin:0 auto;
+}
+
+.small-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 300px;
+}
+
+.small-grid>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	padding: 20px;
+}
+
+.small-grid>div:first-of-type{
+	background-color: #EBEBEB;
+}
+
+.small-grid>div:nth-of-type(2){
+	background-color:#899FC4;
+}
+
+
+.small-grid>div:nth-of-type(3){
+	background-color:#FCCC77;
+	flex-flow: column;
+}
+
+.small-grid>div:nth-of-type(3):hover{
+	background-color: #D3A658;
+}
+
+.small-grid>div:nth-of-type(3):hover h2 {
+	color: #fff;
+}
+
+.small-grid>div:nth-of-type(3):hover svg path {
+	stroke: #fff;
+	fill: #fff;
+}
+
+.small-grid>div:last-of-type{
+	background-color: #CD9D8F;
+}
+
+
+
+
+
+
+
